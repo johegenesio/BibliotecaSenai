@@ -2,8 +2,12 @@
     width: 500px;
     height: 450px;
     background-color:var(--cor-ligth);
-    border-radius: 50px;
+    border-radius: 56px;
+
+    animation: slide 0.4s linear;
+    
 }
+
 
 .BlueBorder{
     width: 500px;
@@ -54,5 +58,14 @@
 button{
     width: 200px;
     height: 200px;
-    font-size: 50pxz;
+    font-size: 50px;
 }
+
+
+@keyframes slide{
+    0% {opacity: 0; -webkit-transform: translateY(-100%) ;}
+    100% {opacity: 1; -webkit-transform: translateY(0) ;}
+}
+
+
+
