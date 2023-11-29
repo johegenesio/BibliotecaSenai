@@ -1,0 +1,58 @@
+.PopUp{
+    width: 500px;
+    height: 450px;
+    background-color:var(--cor-ligth);
+    border-radius: 50px;
+}
+
+.BlueBorder{
+    width: 500px;
+    height: 270px;
+    border-radius: 50px 50px 50px 50px;
+
+    background-color: var(--cor-azul);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-ligth);
+    font-size: 30px;
+}
+
+.BelowPop{
+    width: 500px;
+    height: 180px;
+
+    display: flex;
+    border-radius: 0px 0px 50px 50px;
+
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.yes{
+    background-color:var(--cor-azul);
+    width: 170px;
+    height: 80px;
+    color: var(--cor-ligth);
+    border: none;
+    border-radius: 15px;
+}
+
+.no{
+    background-color: var(--cor-azul);
+    width: 170px;
+    height: 80px;
+    color: var(--cor-ligth);
+    border: none;
+    border-radius: 15px;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    font-size: 50pxz;
+}
