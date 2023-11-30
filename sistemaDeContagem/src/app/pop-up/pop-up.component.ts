@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./pop-up.component.css']
 })
 export class PopUpComponent {
+  mostrar: boolean = false;
 
+  show () {
+    this.mostrar = !this.mostrar;
+  }
+
+  remove() {
+    this.mostrar = !this.mostrar
+  }
 }

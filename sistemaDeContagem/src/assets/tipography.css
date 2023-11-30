@@ -9,6 +9,17 @@
     text-align: center;
 }
 
+.title_black {
+    font-family: var(--font-poppins);
+    font-size: 64px;
+    font-weight: 700;
+    font-style: normal;
+
+    color: var(--cor-dark);
+
+    text-align: center;
+}
+
 .text {
     font-family: var(--font-poppins);
     font-size: 36px;
@@ -29,4 +40,9 @@
     color: var(--cor-ligth);
 
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
