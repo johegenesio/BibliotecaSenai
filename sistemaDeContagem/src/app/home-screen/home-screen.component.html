@@ -3,9 +3,18 @@
 </div> 
 <main>
     <div class="divUsuarios">
-        <a routerLink="curso"><button class="usuarios">Aluno(a)</button></a>
-        <button class="usuarios">Professor(a)</button>
-        <button class="usuarios">Funcionário(a)</button>
-        <button class="usuarios">Visitante</button>
+        <a routerLink="/curso"><button class="usuarios">Aluno(a)</button></a>
+        <button (click)="show()" class="usuarios">Professor(a)</button>
+        <button (click)="show()" class="usuarios">Funcionário(a)</button>
+        <button (click)="show()" class="usuarios">Visitante</button>
     </div>
+    <div class="PopUp" *ngIf="mostrar">
+        <div class="BlueBorder">
+            <p class="title">Deseja confirmar?</p>
+        </div>
+        <div class="BelowPop">
+            <a routerLink="/confirmation"><button class="yes text_bt">SIM</button></a>
+            <button class="no text_bt"  (click)="remove()">NÃO</button>
+        </div>
+    </div> 
 </main>

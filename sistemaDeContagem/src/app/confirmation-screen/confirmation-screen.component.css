@@ -2,34 +2,37 @@
 
 body{
     background-color: #0094FF;
-    height: 1920px;
-    width: 1200px;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
     color: white;
 }
 
 img {
-    margin-top: 450px;
-    margin-left: 80px;
+    width: 760px;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-56%, -50%);
+
+    margin-top: 124px;
 }
 
 .text {
-    margin-top: 240px;
+    margin-top: 160px;
 }
 
 .white {
     height: 66vh;
     width: 100vw;
 
-    position: relative;
+    position: relative; 
 
     background-color: white;
 
     border-bottom-left-radius: 500px;
     border-bottom-right-radius: 500px;
-}
-
-#imgx{
-    display: flex;
-    justify-content: center;
 }

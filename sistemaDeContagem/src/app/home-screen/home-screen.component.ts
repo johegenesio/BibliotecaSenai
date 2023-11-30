@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-screen.component.css']
 })
 export class HomeScreenComponent {
+  mostrar: boolean = false;
 
+  show () {
+    this.mostrar = !this.mostrar;
+  }
+
+  remove() {
+    this.mostrar = !this.mostrar
+  }
 }

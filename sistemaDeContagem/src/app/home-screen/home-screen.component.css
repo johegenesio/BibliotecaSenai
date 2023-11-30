@@ -84,3 +84,78 @@ path {
     width: 30px;
     height: 30px;
 }
+
+.PopUp{
+    width: 500px;
+    height: 450px;
+    background-color:var(--cor-ligth);
+    border-radius: 56px;
+
+    animation: slide 0.4s linear;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+
+.BlueBorder{
+    width: 500px;
+    height: 270px;
+    border-radius: 50px 50px 50px 50px;
+
+    background-color: var(--cor-azul);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-ligth);
+    font-size: 30px;
+}
+
+.BelowPop{
+    width: 500px;
+    height: 180px;
+
+    display: flex;
+    border-radius: 0px 0px 50px 50px;
+
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.yes{
+    background-color:var(--cor-azul);
+    width: 170px;
+    height: 80px;
+    color: var(--cor-ligth);
+    border: none;
+    border-radius: 15px;
+}
+
+.no{
+    background-color: var(--cor-azul);
+    width: 170px;
+    height: 80px;
+    color: var(--cor-ligth);
+    border: none;
+    border-radius: 15px;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+}
+
+
+@keyframes slide{
+    0% {opacity: 0; -webkit-transform: translateY(-100%) ;}
+    100% {opacity: 1; -webkit-transform: translateY(0) ;}
+}

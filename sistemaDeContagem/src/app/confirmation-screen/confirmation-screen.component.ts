@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./confirmation-screen.component.css']
 })
 export class ConfirmationScreenComponent {
-
+  
 }
