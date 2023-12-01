@@ -1,6 +1,6 @@
 .PopUp{
     width: 500px;
-    height: 450px;
+    height: 420px;
     background-color:var(--cor-ligth);
     border-radius: 56px;
 
@@ -32,7 +32,7 @@
 
 .BlueBorder{
     width: 500px;
-    height: 270px;
+    height: 240px;
     border-radius: 50px 50px 50px 50px;
 
     background-color: var(--cor-azul);
@@ -45,6 +45,7 @@
 
     animation: wave 0.4s linear;
 }
+
 
 .BelowPop{
     width: 500px;
@@ -61,28 +62,24 @@
 }
 
 .yes{
-    background-color:var(--cor-azul);
-    width: 170px;
+    width: 150px;
     height: 80px;
     color: var(--cor-ligth);
-    border: none;
+    background-color: var(--cor-azul);
     border-radius: 15px;
+    border: none;
+    
 }
 
 .no{
-    background-color: var(--cor-azul);
-    width: 170px;
+    
+    width: 150px;
     height: 80px;
-    color: var(--cor-ligth);
-    border: none;
+    color: var(--cor-azul);
+    border: solid 4px var(--cor-azul);
+    background-color: var(--cor-ligth);
+    
     border-radius: 15px;
-}
-
-button{
-    width: 200px;
-    height: 200px;
-    font-size: 50px;
-    z-index: 2;
 }
 
 
