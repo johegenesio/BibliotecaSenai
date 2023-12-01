@@ -5,16 +5,30 @@
     border-radius: 56px;
 
     animation: slide 0.4s linear;
-
+    
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    
 }
 
+.dark{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+
+    background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 
 .BlueBorder{
     width: 500px;
@@ -28,6 +42,8 @@
     align-items: center;
     color: var(--cor-ligth);
     font-size: 30px;
+
+    animation: wave 0.4s linear;
 }
 
 .BelowPop{
@@ -66,6 +82,7 @@ button{
     width: 200px;
     height: 200px;
     font-size: 50px;
+    z-index: 2;
 }
 
 
@@ -74,5 +91,16 @@ button{
     100% {opacity: 1; -webkit-transform: translateY(0) ;}
 }
 
+@keyframes wave{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 

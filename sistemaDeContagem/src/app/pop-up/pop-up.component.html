@@ -1,11 +1,13 @@
-<div class="PopUp" *ngIf="mostrar">
-    <div class="BlueBorder">
-        <p class="title">Deseja confirmar?</p>
-    </div>
-    <div class="BelowPop">
-        <button class="yes text_bt">SIM</button>
-        <button class="no text_bt"  (click)="remove()">NÃO</button>
-    </div>
-</div> 
+<div class="dark" *ngIf="mostrar">
+    <div class="PopUp" *ngIf="mostrar">
+        <div class="BlueBorder">
+            <p class="title">Deseja confirmar?</p>
+        </div>
+        <div class="BelowPop">
+            <button class="yes text_bt">SIM</button>
+            <button class="no text_bt"  (click)="remove()">NÃO</button>
+        </div>
+    </div> 
+</div>
 
 <button (click)="show()">OLá</button>
