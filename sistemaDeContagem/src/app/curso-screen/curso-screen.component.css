@@ -63,6 +63,10 @@ main .col {
     gap: 72px;
 }
 
+.col > a {
+    line-height: 32px!important;
+}
+
 main .col button {
     background-color: var(--cor-light);
 
