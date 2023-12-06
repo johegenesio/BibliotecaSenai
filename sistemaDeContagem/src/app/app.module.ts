@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
 import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { CursoScreenComponent } from './curso-screen/curso-screen.component';
 import { ConfirmationScreenComponent } from './confirmation-screen/confirmation-screen.component';
-import { PopUpComponent } from './pop-up/pop-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { PopUpComponent } from './pop-up/pop-up.component';
     WelcomeScreenComponent,
     HomeScreenComponent,
     CursoScreenComponent,
-    ConfirmationScreenComponent,
-    PopUpComponent
+    ConfirmationScreenComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

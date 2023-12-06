@@ -71,10 +71,10 @@ main .col button {
     border: 2px solid var(--cor-azul);
     box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
 
-    width: 300px;
+    width: 380px;
     height: 200px;
 }
 
 .material-symbols-outlined {
-    padding-left: 4px;
+    padding-left: 8px;
 }

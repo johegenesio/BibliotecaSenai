@@ -68,7 +68,7 @@ path {
     font-size: 32px;
     font-weight: 600;
     font-style: normal;
-    color: white;
+    color: white!important;
     margin: 24px 24px;
 }
 
@@ -158,4 +158,14 @@ button{
 @keyframes slide{
     0% {opacity: 0; -webkit-transform: translateY(-100%) ;}
     100% {opacity: 1; -webkit-transform: translateY(0) ;}
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > p {
+    position: absolute;
+    bottom: 16px;
 }

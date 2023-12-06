@@ -1,8 +1,9 @@
 .title {
-    font-family: var(--font-poppins);
-    font-size: 64px;
-    font-weight: 700;
+    font-family: var(--font-poppins)!important;
+    font-size: 64px!important;
+    font-weight: 700!important;
     font-style: normal;
+    line-height: 64px!important;
 
     color: var(--cor-ligth);
 
@@ -37,12 +38,12 @@
     font-weight: 600;
     font-style: normal;
 
-    color: var(--cor-ligth);
+    color: white!important;
 
     text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--cor-dark);
 }

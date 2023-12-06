@@ -1,10 +1,11 @@
-<div class="ContainerGeral">
-    <div class="BlueBackground">
-      <img class="imagem" src="../../assets/Welcome.png" alt="icone">
-      <div class="CirculoImg"></div>
-    </div>
-    <div class="Container">
-      <p class="title_black justificar">Bem Vindo(a)!</p>
-      <a routerLink="home" class="BtnContinue text_bt">Continue</a>
-    </div>
-</div>
+<div class="transicao" *ngIf='mostrar'></div>
+  <div class="ContainerGeral">
+      <div class="BlueBackground">
+        <img class="imagem" src="assets/Welcome.png" alt="icone">
+        <div class="CirculoImg"></div>
+      </div>
+      <div class="Container">
+        <p class="title_black justificar">Bem Vindo(a)!</p>
+        <a (click)="continue()" mat-button class="BtnContinue text_bt">Continue</a>
+      </div>
+  </div>
