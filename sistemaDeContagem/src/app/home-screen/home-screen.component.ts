@@ -19,8 +19,12 @@ export class HomeScreenComponent {
   }
   constructor(private bd: BancoDeDadosService){ }
   enviarDados(){
+    const dataAtual = new Date()
     const dados = {
-      usuario: this.pessoa
+      usuario: this.pessoa,
+      hora: dataAtual.getHours(),
+      dia: dataAtual.getDate(),
+      mes: dataAtual.getMonth() + 1
     }
     this.bd.inserirDados(dados).subscribe(resposta => {
       console.log('Sucesso!', resposta);

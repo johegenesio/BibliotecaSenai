@@ -9,8 +9,12 @@ import { BancoDeDadosService } from '../banco-de-dados.service';
 export class CursoScreenComponent {
   constructor(private bd: BancoDeDadosService){ }
   enviarDados(pessoaSelecionada: string){
+    const dataAtual = new Date()
     const dados = {
-      usuario: pessoaSelecionada
+      usuario: pessoaSelecionada,
+      hora: dataAtual.getHours(),
+      dia: dataAtual.getFullYear(),
+      mes: dataAtual.getMonth() + 1
     }
     this.bd.inserirDados(dados).subscribe(resposta => {
       console.log('Sucesso!', resposta);
