@@ -8,13 +8,15 @@
         <button mat-button (click)="show('funcionario')" class="usuarios">Funcionário(a)</button>
         <button mat-button (click)="show('visitante')" class="usuarios">Visitante</button>
     </div>
-    <div class="PopUp" *ngIf="mostrar">
-        <div class="BlueBorder">
-            <h1 class="title">Deseja confirmar?</h1>
-        </div>
-        <div class="BelowPop">
-            <a routerLink="/confirmation"><button (click)="enviarDados()" class="yes text_bt">SIM</button></a>
-            <button class="no text_bt"  (click)="remove()">NÃO</button>
+    <div class="dark" *ngIf="mostrar">
+        <div class="PopUp" *ngIf="mostrar">
+            <div class="BlueBorder">
+                <h1 class="title">Deseja confirmar?</h1>
+            </div>
+            <div class="BelowPop">
+                <a routerLink="/confirmation"><button (click)="enviarDados()" class="yes text_bt">SIM</button></a>
+                <button class="no text_bt"  (click)="remove()">NÃO</button>
+            </div>
         </div>
     </div>
 </main>
