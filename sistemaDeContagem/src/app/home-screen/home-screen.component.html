@@ -3,10 +3,11 @@
 </div> 
 <main>
     <div class="divUsuarios">
-        <a routerLink="/curso"><button mat-button class="usuarios">Aluno(a)</button></a>
-        <button mat-button (click)="show('professor')" class="usuarios">Professor(a)</button>
-        <button mat-button (click)="show('funcionario')" class="usuarios">Funcionário(a)</button>
-        <button mat-button (click)="show('visitante')" class="usuarios">Visitante</button>
+        <div>
+        <label>digite o CPF / insert CPF:</label>
+        <input id="CPFInput" maxlength="14" oninput="criaMascara()">
+        </div>
+        <a routerLink="/curso"><button mat-button class="usuarios">Próximo</button></a>
     </div>
     <div class="dark" *ngIf="mostrar">
         <div class="PopUp" *ngIf="mostrar">
