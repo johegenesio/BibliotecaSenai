@@ -10,6 +10,8 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { CursoScreenComponent } from './curso-screen/curso-screen.component';
 import { ConfirmationScreenComponent } from './confirmation-screen/confirmation-screen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

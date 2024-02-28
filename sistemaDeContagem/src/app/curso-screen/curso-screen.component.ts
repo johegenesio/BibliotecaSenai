@@ -7,13 +7,22 @@ import { BancoDeDadosService } from '../banco-de-dados.service';
   styleUrls: ['./curso-screen.component.css']
 })
 export class CursoScreenComponent {
-  constructor(private bd: BancoDeDadosService){ }
-  enviarDados(pessoaSelecionada: string){
+
+  
+
+  constructor(private bd: BancoDeDadosService){
+    
+   }
+
+
+  enviarDados(cursoSelecionado: string){
+    const cpf = this.bd.getCPFTemporario();
     const dataAtual = new Date()
     const dados = {
-      usuario: pessoaSelecionada,
+      usuario: cpf,
+      curso: cursoSelecionado,
       hora: dataAtual.getHours(),
-      dia: dataAtual.getFullYear(),
+      dia: dataAtual.getDate(),
       mes: dataAtual.getMonth() + 1
     }
     this.bd.inserirDados(dados).subscribe(resposta => {

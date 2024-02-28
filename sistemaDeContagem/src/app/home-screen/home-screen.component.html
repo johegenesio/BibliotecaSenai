@@ -1,24 +1,10 @@
 <div class="titulo">
-    <h1 class="title">Quem você é?</h1>
-</div> 
+    <h1 class="title">Informe seu CPF:</h1>
+</div>
 <main>
     <div class="divUsuarios">
-        <div>
-        <label>digite o CPF / insert CPF:</label>
-        <input id="CPFInput" maxlength="14" oninput="criaMascara()">
-        </div>
-        <a routerLink="/curso"><button mat-button class="usuarios">Próximo</button></a>
-    </div>
-    <div class="dark" *ngIf="mostrar">
-        <div class="PopUp" *ngIf="mostrar">
-            <div class="BlueBorder">
-                <h1 class="title">Deseja confirmar?</h1>
-            </div>
-            <div class="BelowPop">
-                <a routerLink="/confirmation"><button (click)="enviarDados()" class="yes text_bt">SIM</button></a>
-                <button class="no text_bt"  (click)="remove()">NÃO</button>
-            </div>
-        </div>
+        <input id="CPFInput" type="number" [(ngModel)]="cpf" placeholder="Digite seu CPF aqui (somente números)" required #cpfInput="ngModel">
+        <a routerLink="/curso"><button (click)="pegarCPF()" mat-button class="usuarios">Próximo</button></a>
     </div>
 </main>
 <footer>
